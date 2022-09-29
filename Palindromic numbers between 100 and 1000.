@@ -1,0 +1,9 @@
+minimum = 100
+maximum = 1000
+
+print("Palindromic numbers between 100 and 1000.")
+
+for i in range(100, 1000):
+    i = str(i)
+    if i == i[::-1]:
+        print(i, end = ' ')
