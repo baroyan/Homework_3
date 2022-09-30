@@ -1,0 +1,6 @@
+n_1 = int(input("Enter a number: "))
+n_2 = int(input("Enter a number: "))
+n_3 = int(input("Enter a number: "))
+n_4 = int(input("Enter a number: "))
+n_5 = int(input("Enter a number: "))
+print(n_1, n_2, n_3, n_4, n_5, sep = '+')
