@@ -1,0 +1,26 @@
+# phone number like as abc-def-hijk or 1-abc-def-hijk
+
+number = input("Enter a phone number: ")
+
+lenght = len(number)
+
+if lenght == 12 \
+    and number[0:3].isdigit() \
+    and number[3] == '-' \
+    and number[4:7].isdigit() \
+    and number[7] == '-' \
+    and number[8:].isdigit():
+    print(f"{number} is valid")
+    
+if lenght == 14 \
+    and number[0] == 1 \
+    and number[1] == '-'\
+    and number[2:5].isdigit() \
+    and number[5] == '-' \
+    and number[6:9].isdigit() \
+    and number[9] == '-' \
+    and number[10:].isdigit():
+    print(f"{number} is valid")
+
+else:
+    print(f"{number} is not valid")
